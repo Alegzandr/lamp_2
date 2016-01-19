@@ -61,7 +61,8 @@ class Deck
 
     public function deal($n = 1)
     {
-        return;
+        $cards = array_splice($this->cards, 0, $n);
+        return $cards;
     }
 }
 
