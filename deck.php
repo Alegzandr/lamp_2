@@ -70,3 +70,51 @@ $d = new Deck();
 list($card) = $d->shuffle()->deal(1);
 
 echo $card;
+
+
+class Player
+{
+    private $hand;
+    private $nickname;
+
+    public function __construct($name)
+    {
+        $this->hand = [];
+        $this->nickname = $name;
+    }
+
+    public function take($cards)
+    {
+        //TODO
+    }
+
+    public function getHandValue()
+    {
+        //TODO
+    }
+}
+
+$p = new Player('Julien');
+
+class Bank extends Player
+{
+
+}
+
+// Scenario 1
+
+$deck = new Deck();
+$deck->shuffle();
+$bank = new Bank();
+
+$bank = take($deck->deal(2));
+
+while ($bank->getHandValue() < 17) {
+    $bank->take($deck->deal(1));
+}
+
+if ($bank->getHandValue() > 21) {
+    echo 'La banque perd';
+} else {
+    echo 'La banque a ' . $bank->getHandValue();
+}
