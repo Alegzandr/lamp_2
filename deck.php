@@ -56,7 +56,7 @@ class Deck
     public function shuffle()
     {
         shuffle($this->cards);
-        return this;
+        return $this;
     }
 
     public function deal($n = 1)
