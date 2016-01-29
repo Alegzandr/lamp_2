@@ -1,7 +1,3 @@
-<?php
-require 'cards.php';
-
-?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -9,9 +5,16 @@ require 'cards.php';
     <title>Blackjack PHP</title>
 </head>
 <body>
-<form method="post">
-    <input type="button" name="draw" value="Tirer une carte">
-    <input type="button" name="surrender" value="Abandonner">
-</form>
+<fieldset>
+    <legend>Blackjack</legend>
+    <form method="POST">
+        <input type="radio" name="choice" value="yes" checked="checked">
+        <input type="submit" value="ok">
+    </form>
+</fieldset>
+
+<?php
+require_once 'game.php';
+?>
 </body>
 </html>
