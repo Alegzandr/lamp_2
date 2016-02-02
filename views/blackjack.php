@@ -29,6 +29,7 @@ if (isset($_POST['choice'])) {
     <br>
     <?php
     require_once '../controllers/game.php';
+    require_once '../controllers/restart.php';
     ?>
 </fieldset>
 </body>
