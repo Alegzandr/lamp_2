@@ -1,10 +1,10 @@
 <?php
-require_once '../models/card.php';
-require_once 'deck.php';
-require_once 'player.php';
-require_once 'bank.php';
-require_once 'save.php';
+require_once 'Card.php';
+require_once 'Deck.php';
+require_once 'Player.php';
+require_once 'Bank.php';
 
+//SCENARIO 1
 $deck = new Deck();
 $deck->shuffle();
 $bank = new Bank();
