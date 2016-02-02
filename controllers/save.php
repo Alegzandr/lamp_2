@@ -1,0 +1,2 @@
+<?php
+// Enregistre les parties
