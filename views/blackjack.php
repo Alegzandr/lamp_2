@@ -14,13 +14,16 @@ if (isset($_POST['choice'])) {
 <fieldset>
     <legend>Blackjack</legend>
     <form method="POST" name="game">
-        <label for="choice-y">Tirer une carte</label>
-        <input type="radio" name="choice" id="choice-y" value="yes" checked><br>
+        <label for="yes">Tirer une carte</label>
+        <input type="radio" name="choice" id="yes" value="yes" checked><br>
 
-        <label for="choice-y">S'arrêter</label>
-        <input type="radio" name="choice" id="choice-n" value="no"><br>
+        <label for="no">S'arrêter</label>
+        <input type="radio" name="choice" id="no" value="no"><br>
 
-        <br><input type="submit" value="Jouer"><br>
+        <label for="restart">Recommencer</label>
+        <input type="radio" name="choice" id="restart" value="restart"><br>
+
+        <br><input type="submit"><br>
     </form>
 
     <br>
