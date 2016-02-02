@@ -11,10 +11,10 @@
         <input type="radio" name="choice" value="yes" checked="checked">
         <input type="submit" value="ok">
     </form>
-</fieldset>
 
-<?php
-require_once '../controllers/game.php';
-?>
+    <?php
+    require_once '../controllers/game.php';
+    ?>
+</fieldset>
 </body>
 </html>
