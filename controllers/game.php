@@ -2,6 +2,7 @@
 require_once '../models/card.php';
 require_once 'deck.php';
 require_once 'player.php';
+require_once 'bank.php';
 
 $deck = new Deck();
 $deck->shuffle();
