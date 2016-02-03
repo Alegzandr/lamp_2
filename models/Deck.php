@@ -11,7 +11,6 @@ class Deck
         $faces = range(1, 10);
         $faces = array_merge($faces, ["Jack", "Queen", "King"]);
         $colors = ["HEART", "CLUB", "DIAMOND", "SPADE"];
-
         foreach ($colors as $color) {
             foreach ($faces as $face) {
                 $this->cards[] = new Card($color, $face);

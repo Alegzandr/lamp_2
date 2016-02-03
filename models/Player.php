@@ -33,5 +33,4 @@ class Player
         }
         return $panier;
     }
-
 }
